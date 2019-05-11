@@ -27,7 +27,9 @@ class App extends Component {
           <NavBar />
 
           <MDBRow>
+            <div className="container-fluid">
             <Jumbotron />
+            </div>
           </MDBRow>
           <MDBContainer>
             <MDBRow id="categories">
