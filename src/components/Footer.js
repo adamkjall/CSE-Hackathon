@@ -1,5 +1,12 @@
 import React from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter, MDBBtn, MDBIcon } from "mdbreact";
+import {
+  MDBCol,
+  MDBContainer,
+  MDBRow,
+  MDBFooter,
+  MDBBtn,
+  MDBIcon
+} from "mdbreact";
 
 const Footer = () => {
   return (
@@ -7,11 +14,16 @@ const Footer = () => {
       <MDBContainer className="text-center ">
         <MDBRow>
           <MDBCol md="6">
-            <h5 className="title">Footer Content</h5>
-            <p>
-              Here you can use rows and columns here to organize your footer
-              content.
-            </p>
+            <h5 className="title">Partners</h5>
+            <img
+              style={{ width: "50%", height: "50%" }}
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR1ope0pbWHk9L0rbd1m7obyUHNKkdvLU3l4UGQY_cGTMy2ZWe"
+            />
+
+            <img
+              style={{ width: "50%", height: "50%" }}
+              src="http://etunanytt.se/wp-content/uploads/2016/06/migrationsverket-logo.jpg"
+            />
           </MDBCol>
           <MDBCol md="6">
             <MDBBtn color="primary" social="fb">
@@ -26,10 +38,8 @@ const Footer = () => {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR1ope0pbWHk9L0rbd1m7obyUHNKkdvLU3l4UGQY_cGTMy2ZWe"></img> 
-        <img src="http://etunanytt.se/wp-content/uploads/2016/06/migrationsverket-logo.jpg"></img>
-      </div>
+     
+
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
           &copy; {new Date().getFullYear()} Copyright:{" "}

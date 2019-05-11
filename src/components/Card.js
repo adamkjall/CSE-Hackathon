@@ -24,7 +24,7 @@ class Card extends React.Component {
           <MDBCardText>
             {this.props.text}
           </MDBCardText>
-          <MDBBtn color="primary" size="md">
+          <MDBBtn color="secondary" size="md">
             read more
           </MDBBtn>
         </MDBCardBody>
