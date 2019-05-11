@@ -90,6 +90,10 @@ class NavBar extends Component {
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink to="#!">
+                <MDBIcon icon="sign-in-alt" />&nbsp; Sign In</MDBNavLink>
+            </MDBNavItem>
             </MDBNavbarNav>
           </MDBCollapse>
         </MDBNavbar>

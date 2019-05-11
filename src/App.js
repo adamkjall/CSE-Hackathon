@@ -109,7 +109,7 @@ class App extends Component {
                 </MDBCol>
                 <MDBCol lg="4" className="text-center">
                   <Card
-                    title="Title"
+                    title="Follow your interests."
                     text="Text text text text text text"
                     image="https://cdn-images-1.medium.com/max/1200/1*BHN1sCwtylPmj9ZdQvYgMg.png"
                   />
