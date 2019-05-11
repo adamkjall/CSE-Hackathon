@@ -50,7 +50,7 @@ class Testimonials extends React.Component {
               </div>
 
               <h4 class="font-weight-bold dark-grey-text mt-4">John Doe</h4>
-              <h6 class="font-weight-bold blue-text my-3">Web Developer</h6>
+              <h6 class="font-weight-bold blue-text my-3">Graphic Designer</h6>
               <p class="font-weight-normal dark-grey-text">
                 <i class="fas fa-quote-left pr-2" />Ut enim ad minima veniam,
                 quis nostrum exercitationem ullam corporis suscipit laboriosam,

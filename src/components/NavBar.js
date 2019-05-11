@@ -80,18 +80,13 @@ class NavBar extends Component {
             <MDBNavItem>
               <MDBDropdown>
                 <MDBDropdownToggle nav caret>
-                  <MDBIcon icon="globe-europe"> Language</MDBIcon>
+                  <MDBIcon icon="globe-europe"> </MDBIcon>
+                       &nbsp; Language
                 </MDBDropdownToggle>
                 <MDBDropdownMenu className="dropdown-default" right>
-                  <MDBDropdownItem href="#!">English-EN</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Arabic-AR</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">Greek-GR</MDBDropdownItem>
-                  <MDBDropdownItem href="#!">
-                    Something else here
-                    </MDBDropdownItem>
-                  <MDBDropdownItem href="#!">
-                    Something else here
-                    </MDBDropdownItem>
+                  <MDBDropdownItem href="#!">English - EN</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Arabic - العربية</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Turkish - Türkçe</MDBDropdownItem>
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavItem>
