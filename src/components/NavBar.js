@@ -49,6 +49,9 @@ class NavBar extends Component {
               <MDBNavItem active>
                 <MDBNavLink to="#!">Home</MDBNavLink>
               </MDBNavItem>
+            <MDBNavItem>
+              <MDBNavLink to="#!">Skills Available</MDBNavLink>
+            </MDBNavItem>
               <MDBNavItem>
                 <MDBNavLink to="#!">Work in sweden</MDBNavLink>
               </MDBNavItem>
@@ -74,30 +77,24 @@ class NavBar extends Component {
               </MDBNavItem>
             </MDBNavbarNav>
             <MDBNavbarNav right>
-              <MDBNavItem>
-                <MDBNavLink
-                  className="waves-effect waves-light d-flex align-items-center"
-                  to="#!"
-                >
-                  1<MDBIcon icon="envelope" className="ml-1" />
-                </MDBNavLink>
-              </MDBNavItem>
-              <MDBNavItem>
-                <MDBDropdown>
-                  <MDBDropdownToggle className="dopdown-toggle" nav>
-                    <img
-                      src="https://mdbootstrap.com/img/Photos/Avatars/avatar-2.jpg"
-                      className="rounded-circle z-depth-0"
-                      style={{ height: "35px", padding: 0 }}
-                      alt=""
-                    />
-                  </MDBDropdownToggle>
-                  <MDBDropdownMenu className="dropdown-default" right>
-                    <MDBDropdownItem href="#!">My account</MDBDropdownItem>
-                    <MDBDropdownItem href="#!">Log out</MDBDropdownItem>
-                  </MDBDropdownMenu>
-                </MDBDropdown>
-              </MDBNavItem>
+            <MDBNavItem>
+              <MDBDropdown>
+                <MDBDropdownToggle nav caret>
+                  <MDBIcon icon="globe-europe"> Language</MDBIcon>
+                </MDBDropdownToggle>
+                <MDBDropdownMenu className="dropdown-default" right>
+                  <MDBDropdownItem href="#!">English-EN</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Arabic-AR</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">Greek-GR</MDBDropdownItem>
+                  <MDBDropdownItem href="#!">
+                    Something else here
+                    </MDBDropdownItem>
+                  <MDBDropdownItem href="#!">
+                    Something else here
+                    </MDBDropdownItem>
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavItem>
             </MDBNavbarNav>
           </MDBCollapse>
         </MDBNavbar>
