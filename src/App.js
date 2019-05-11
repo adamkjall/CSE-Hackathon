@@ -5,13 +5,19 @@ import {
   MDBContainer,
   MDBRow,
   MDBView,
-  MDBMask
+  MDBMask,
+  MDBCardGroup,
+  MDBIcon,
+  MDBNavLink
 } from "mdbreact";
 import { BrowserRouter as Router } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import Card from "./components/Card";
+import Jumbotron from "./components/Jumbotron";
 import "./index.css";
 import logo from "./logo.png";
+import Testimonials from "./components/Testimonials";
 
 class App extends Component {
   render() {
@@ -19,38 +25,99 @@ class App extends Component {
       <Router>
         <div>
           <NavBar />
-          <MDBRow>
-            <MDBContainer>
-              <MDBView className="mt-2">
-                <img
-                  src="https://lh5.googleusercontent.com/6_KLr7jkcE4hK9f5O8rb7luqOWlL24d0tKGp7s97CxVDZ5Nk0Vqt8EzQY78rGKrlicJqzSnNfx_az8DaoIUVmO4iO9ipjxx3706Yp2ZhozWCuFY76afc_KfPcbxqannM_wF-du_k"
-                  class="img-fluid"
-                  alt="sample image"
-                />
-                <MDBMask className="flex-center" overlay="black-strong">
-                  <p className="white-text">Everything is awesome</p>
-                </MDBMask>
-              </MDBView>
-            </MDBContainer>
-          </MDBRow>
 
-          <MDBRow center style={{ height: "100vh" }}>
-            <MDBCol middle="true" sm="8" className="text-center">
-              <img src={logo} alt="logo" style={{ width: "10rem" }} />
-              <h1>Welcome to Your MDB React App</h1>
-              <p className="mb-2">
-                The application is configured and ready to import our
-                components.
-              </p>
-              <MDBBtn
-                href="https://mdbootstrap.com/docs/react/"
-                target="blank"
-                color="light-blue"
-              >
-                <strong>Check out our docs!</strong>
-              </MDBBtn>
-            </MDBCol>
+          <MDBRow>
+            <Jumbotron />
           </MDBRow>
+          <MDBContainer>
+            <MDBRow id="categories">
+              <MDBCol md="4" className="mt-3">
+                <MDBCol size="2" md="2" className="float-left">
+                  <MDBIcon icon="css3" brand className="pink-text" size="2x" />
+                </MDBCol>
+                <MDBCol size="10" md="8" lg="10" className="float-right">
+                  <h4 className="font-weight-bold">CSS</h4>
+                  <p className="grey-text">
+                    Animations, colours, shadows, skins and many more! Get to
+                    know all our css styles in one place.
+                  </p>
+                  <MDBNavLink
+                    tag="button"
+                    className="btn btn-sm indigo darken-3 text-white"
+                    to="css"
+                  >
+                    Learn more
+                  </MDBNavLink>
+                </MDBCol>
+              </MDBCol>
+              <MDBCol md="4" className="mt-3">
+                <MDBCol size="2" md="2" className="float-left">
+                  <MDBIcon icon="bars" className="pink-text" size="2x" />
+                </MDBCol>
+                <MDBCol size="10" md="8" lg="10" className="float-right">
+                  <h4 className="font-weight-bold">NAVIGATION</h4>
+                  <p className="grey-text">
+                    Ready-to-use navigation layouts, navbars, breadcrumbs and
+                    much more! Learn more about our navigation components.
+                  </p>
+                  <MDBNavLink
+                    tag="button"
+                    className="btn btn-sm indigo darken-3 text-white"
+                    to="/navigation"
+                  >
+                    Learn more
+                  </MDBNavLink>
+                </MDBCol>
+              </MDBCol>
+              <MDBCol md="4" className="mt-3">
+                <MDBCol size="2" md="2" className="float-left">
+                  <MDBIcon icon="edit" className="blue-text" size="2x" />
+                </MDBCol>
+                <MDBCol size="10" md="8" lg="10" className="float-right">
+                  <h4 className="font-weight-bold">FORMS</h4>
+                  <p className="grey-text">
+                    Inputs, autocomplete, selecst, date and time pickers.
+                    Everything in one place is ready to use!
+                  </p>
+                  <MDBNavLink
+                    tag="button"
+                    className="btn btn-sm indigo lighten-2 text-white"
+                    to="/forms"
+                  >
+                    Learn more
+                  </MDBNavLink>
+                </MDBCol>
+              </MDBCol>
+            </MDBRow>
+            <MDBRow>
+              <MDBCardGroup deck className="m-3">
+                <MDBCol lg="4" className="text-center">
+                  <Card
+                    title="Top 5 reasons to have a career in tech"
+                    text="Text text text text text text"
+                    image="https://static.teamviewer.com/resources/2018/07/access-office-resources.jpg"
+                  />
+                </MDBCol>
+                <MDBCol lg="4" className="text-center">
+                  <Card
+                    title="What is computer programming?"
+                    text="Text text text text text text"
+                    image="https://www.itchronicles.com/wp-content/uploads/2018/10/bigstock-Programming-Web-Banner-Best-P-258081862-768x636.jpg"
+                  />
+                </MDBCol>
+                <MDBCol lg="4" className="text-center">
+                  <Card
+                    title="Title"
+                    text="Text text text text text text"
+                    image="https://cdn-images-1.medium.com/max/1200/1*BHN1sCwtylPmj9ZdQvYgMg.png"
+                  />
+                </MDBCol>
+              </MDBCardGroup>
+            </MDBRow>
+            <MDBRow>
+              <Testimonials />
+            </MDBRow>
+          </MDBContainer>
           <Footer />
         </div>
       </Router>

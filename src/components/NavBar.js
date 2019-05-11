@@ -33,11 +33,11 @@ class NavBar extends Component {
           color="elegant-color"
           dark
           expand="md"
-          transparent
-          style={{backgroundColor: 'rgba(22, 22, 22, 0.9)' }}
+          
+          style={{ }}
         >
           <MDBNavbarBrand>
-            <strong className="white-text">MDBNavbar</strong>
+            <strong className="white-text">TechInSweden</strong>
           </MDBNavbarBrand>
           <MDBNavbarToggler onClick={this.toggleCollapse("navbarCollapse3")} />
           <MDBCollapse
@@ -50,15 +50,15 @@ class NavBar extends Component {
                 <MDBNavLink to="#!">Home</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to="#!">Features</MDBNavLink>
+                <MDBNavLink to="#!">Work in sweden</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
-                <MDBNavLink to="#!">Pricing</MDBNavLink>
+                <MDBNavLink to="#!">About</MDBNavLink>
               </MDBNavItem>
               <MDBNavItem>
                 <MDBDropdown>
                   <MDBDropdownToggle nav caret>
-                    <div className="d-none d-md-inline">MDBDropdown</div>
+                    <div className="d-none d-md-inline">Careers</div>
                   </MDBDropdownToggle>
                   <MDBDropdownMenu className="dropdown-default" right>
                     <MDBDropdownItem href="#!">Action</MDBDropdownItem>
