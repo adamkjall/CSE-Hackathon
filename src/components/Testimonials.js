@@ -3,7 +3,7 @@ import React from "react";
 class Testimonials extends React.Component {
   render() {
     return (
-      <section class="team-section text-center my-5">
+      <section class="team-section text-center">
         <h2 class="h1-responsive font-weight-bold my-5">Testimonials v.3</h2>
 
         <p class="dark-grey-text w-responsive mx-auto mb-5">

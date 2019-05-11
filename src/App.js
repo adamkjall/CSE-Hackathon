@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import {
-  MDBBtn,
   MDBCol,
   MDBContainer,
   MDBRow,
-  MDBView,
-  MDBMask,
   MDBCardGroup,
   MDBIcon,
   MDBNavLink
@@ -28,17 +25,31 @@ class App extends Component {
 
           <MDBRow>
             <div className="container-fluid">
-            <Jumbotron />
+              <Jumbotron />
             </div>
           </MDBRow>
+
           <MDBContainer>
-            <MDBRow id="categories">
+            <MDBRow>
+              <div className="text-center mx-4">
+                <h1>Title</h1>
+                <p className="text-left">
+                  A recent report from the Swedish IT & Telecom Industries
+                  concluded that the IT industry faces a deficit of more than
+                  70,000 IT professionals by 2022 unless urgent measures are
+                  taken to attract more foreign workers with IT and digital
+                  technology skills.
+                </p>
+              </div>
+            </MDBRow>
+            <hr />
+            <MDBRow id="categories" className="mb-4">
               <MDBCol md="4" className="mt-3">
                 <MDBCol size="2" md="2" className="float-left">
                   <MDBIcon icon="css3" brand className="pink-text" size="2x" />
                 </MDBCol>
                 <MDBCol size="10" md="8" lg="10" className="float-right">
-                  <h4 className="font-weight-bold">CSS</h4>
+                  <h4 className="font-weight-bold">Courses</h4>
                   <p className="grey-text">
                     Animations, colours, shadows, skins and many more! Get to
                     know all our css styles in one place.
@@ -57,7 +68,7 @@ class App extends Component {
                   <MDBIcon icon="bars" className="pink-text" size="2x" />
                 </MDBCol>
                 <MDBCol size="10" md="8" lg="10" className="float-right">
-                  <h4 className="font-weight-bold">NAVIGATION</h4>
+                  <h4 className="font-weight-bold">Internship</h4>
                   <p className="grey-text">
                     Ready-to-use navigation layouts, navbars, breadcrumbs and
                     much more! Learn more about our navigation components.
@@ -76,7 +87,7 @@ class App extends Component {
                   <MDBIcon icon="edit" className="blue-text" size="2x" />
                 </MDBCol>
                 <MDBCol size="10" md="8" lg="10" className="float-right">
-                  <h4 className="font-weight-bold">FORMS</h4>
+                  <h4 className="font-weight-bold">Roadmaps</h4>
                   <p className="grey-text">
                     Inputs, autocomplete, selecst, date and time pickers.
                     Everything in one place is ready to use!
@@ -91,6 +102,7 @@ class App extends Component {
                 </MDBCol>
               </MDBCol>
             </MDBRow>
+            <hr />
             <MDBRow>
               <MDBCardGroup deck className="m-3">
                 <MDBCol lg="4" className="text-center">
@@ -116,6 +128,7 @@ class App extends Component {
                 </MDBCol>
               </MDBCardGroup>
             </MDBRow>
+            <hr />
             <MDBRow>
               <Testimonials />
             </MDBRow>
